@@ -2,11 +2,11 @@ package com.softed.singleton;
 
 public class Singleton {
 
-	private Singleton singleton;
+	private static Singleton singleton;
 	
 	private Singleton() {}
 	
-	public Singleton getInstance() {
+	public static Singleton getInstance() {
 		
 		if(singleton == null) {
 			singleton = new Singleton();
